@@ -4,6 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aman Kumar — Full‑Stack Developer</title>
+  <style>
+#cursorGlow{
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(99,102,241,0.25), transparent 60%);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+</style>
   <meta name="description" content="Aman Kumar — Full‑Stack Developer (HTML, CSS, JavaScript, Node.js, PostgreSQL). Portfolio, projects, experience, and contact." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +32,7 @@
 </head>
 <body class="bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 text-slate-800 dark:text-slate-200">
   <!-- NAV -->
+   <div id="cursorGlow"></div>
   <header class="fixed top-0 inset-x-0 z-50">
     <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="mt-4 mb-3 flex items-center justify-between rounded-2xl glass shadow/30 shadow-sm ring-1 ring-black/5 dark:ring-white/10 px-4 py-3">
@@ -62,7 +75,7 @@
           Building clean, fast web apps for real business results
         </h1>
         <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">
-          I'm <strong>Aman Kumar</strong>, a results‑driven Full Stack Engineer with 2+ years of experience building scalable, production‑grade applications using HTML, CSS, JavaScript, Node.js, Express.js, and PostgreSQL. I focus on clean architecture, optimized performance, and business‑centric problem solving.
+          I'm <strong>Aman Kumar</strong>, a results‑driven Full Stack Engineer with 3+ years of experience building scalable, production‑grade applications using HTML, CSS, JavaScript, Node.js, Express.js, and PostgreSQL. I focus on clean architecture, optimized performance, and business‑centric problem solving.
         <div class="mt-6 flex flex-wrap items-center gap-3">
           <a href="#projects" class="inline-flex items-center gap-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-3 text-sm font-semibold shadow-sm">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
@@ -71,9 +84,7 @@
           <a href="#contact" class="inline-flex items-center gap-2 rounded-xl ring-1 ring-slate-300 dark:ring-slate-700 hover:ring-indigo-300 dark:hover:ring-indigo-600 px-5 py-3 text-sm font-semibold">
             Contact me
           </a>
-          <a href="#" class="inline-flex items-center gap-2 rounded-xl ring-1 ring-slate-300 dark:ring-slate-700 hover:ring-indigo-300 dark:hover:ring-indigo-600 px-5 py-3 text-sm font-semibold" download>
-            Download résumé
-          </a>
+        
         </div>
         <div class="mt-8 flex items-center gap-4 text-sm">
           <a href="mailto:amankr0741@gmail.com" class="hover:underline">amankr0741@gmail.com</a>
@@ -83,18 +94,28 @@
           <a href="https://www.linkedin.com/in/-aman-kumar" target="_blank" class="hover:underline">LinkedIn</a>
         </div>
       </div>
-      <div class="relative">
-        <img class="w-full h-[420px] object-cover rounded-3xl shadow-lg ring-1 ring-black/5 dark:ring-white/10" src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1600&auto=format&fit=crop" alt="Developer desk with code on screens" />
-        <div class="absolute -bottom-6 -left-6 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-2xl p-4 ring-1 ring-black/5 dark:ring-white/10 shadow-sm">
-          <p class="text-xs text-slate-500">Recent tech:</p>
-          <div class="mt-2 flex flex-wrap gap-2">
-            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800">Node.js</span>
-            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800">PostgreSQL</span>
-            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800">Bootstrap</span>
-            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800">Wappler</span>
-          </div>
-        </div>
-      </div>
+<div class="relative">
+  <img class="w-full h-[420px] object-cover rounded-3xl shadow-lg ring-1 ring-black/5 dark:ring-white/10"
+    src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1600&auto=format&fit=crop"
+    alt="Developer desk with code on screens" />
+
+  <!-- Mobile: below image | Desktop: absolute bottom-left -->
+  <div class="md:absolute md:-bottom-6 md:left-[-1.5rem] bg-white/80 dark:bg-slate-900/80
+              backdrop-blur-xl rounded-2xl p-4 ring-1 ring-black/5 dark:ring-white/10 shadow-sm
+              mt-4 md:mt-0 mx-auto md:mx-0 w-fit">
+    <p class="text-xs text-slate-500">Recent tech:</p>
+    <div class="mt-2 flex flex-wrap gap-2 justify-center md:justify-start">
+      <span class="px-2 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800">React</span>
+      <span class="px-2 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800">React Native</span>
+      <span class="px-2 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800">Node.js</span>
+      <span class="px-2 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800">PostgreSQL</span>
+      <span class="px-2 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800">Python</span>
+      <span class="px-2 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800">DevOps</span>
+    </div>
+  </div>
+</div>
+
+
     </div>
   </section>
 
@@ -109,7 +130,7 @@
           <dl class="grid grid-cols-2 gap-y-3 gap-x-4 text-sm">
             <dt class="text-slate-500">Location</dt><dd>India (UTC+5:30)</dd>
             <dt class="text-slate-500">Degree</dt><dd>MCA, 2024</dd>
-            <dt class="text-slate-500">Experience</dt><dd>2+ years</dd>
+            <dt class="text-slate-500">Experience</dt><dd>3+ years</dd>
             <dt class="text-slate-500">Freelance</dt><dd>Available</dd>
           </dl>
         </div>
@@ -264,7 +285,7 @@
           <span class="stat-label">features shipped</span>
         </div>
         <div class="stat">
-          <span class="stat-number">2+yrs</span>
+          <span class="stat-number">3+yrs</span>
           <span class="stat-label">full‑stack experience</span>
         </div>
         <div class="stat">
@@ -344,9 +365,11 @@
       <textarea name="message" placeholder="What are we building?" rows="5" class="mt-1 input" required></textarea>
     </div>
 
-    <button type="submit" class="rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-3 text-sm font-semibold shadow-sm">
-      Send message
-    </button>
+  <button id="sendBtn" type="submit" class="rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-3 text-sm font-semibold shadow-sm flex items-center justify-center gap-2">
+  <span id="btnText">Send message</span>
+  <span id="btnLoader" class="hidden animate-spin border-2 border-white/60 border-t-transparent rounded-full w-4 h-4"></span>
+</button>
+
 
     <p id="formStatus" class="text-xs text-slate-500 mt-2"></p>
   </div>
@@ -364,8 +387,6 @@
         <a href="https://github.com/amankr-111" target="_blank" class="hover:underline">GitHub</a>
         <span aria-hidden>•</span>
         <a href="https://www.linkedin.com/in/-aman-kumar" target="_blank" class="hover:underline">LinkedIn</a>
-        <span aria-hidden>•</span>
-        <a href="#" class="hover:underline">Download résumé</a>
       </div>
     </div>
   </footer>
@@ -416,28 +437,99 @@
     });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray("section").forEach((section) => {
+  gsap.from(section, {
+    opacity: 0,
+    y: 50,
+    duration: 0.9,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: section,
+      start: "top 80%",
+      toggleActions: "play none none reverse"
+    }
+  });
+});
+</script>
+<script>
+const cards = document.querySelectorAll(".group");
+cards.forEach(card => {
+  card.addEventListener("mousemove", () => {
+    gsap.to(card, { y: -8, duration: 0.3, ease: "power3.out" });
+  });
+  card.addEventListener("mouseleave", () => {
+    gsap.to(card, { y: 0, duration: 0.4, ease: "power3.out" });
+  });
+});
+</script>
+<script>
+gsap.to(".relative img", {
+  y: -20,
+  duration: 3,
+  ease: "power1.inOut",
+  repeat: -1,
+  yoyo: true
+});
+</script>
+
+
+
+<script>
+document.addEventListener("mousemove", (e) => {
+  gsap.to("#cursorGlow", { x: e.clientX, y: e.clientY, duration: 0.25, ease: "power2.out" });
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
   (function(){
-    emailjs.init("SHl36sK5Uoz3pwnwQ"); 
+    emailjs.init("SHl36sK5Uoz3pwnwQ");
   })();
 
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
+  const form = document.getElementById('contactForm');
+  const formStatus = document.getElementById('formStatus');
+  const sendBtn = document.getElementById('sendBtn');
+  const btnText = document.getElementById('btnText');
+  const btnLoader = document.getElementById('btnLoader');
+
+  form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const formStatus = document.getElementById('formStatus');
+    // Show loader
+    btnText.textContent = "Sending...";
+    btnLoader.classList.remove("hidden");
+    sendBtn.disabled = true;
 
-    emailjs.sendForm("service_hp5egxb", "template_sh8173p", this)
+    emailjs.sendForm("service_2lm5qhl", "template_sh8173p", this)
       .then(() => {
+
+        // Success UI
         formStatus.textContent = "✅ Message sent successfully! I will get back to you soon.";
         formStatus.style.color = "green";
-        this.reset();
+
+        // Reset form
+        form.reset();
+
       }, (err) => {
+
+        // Error UI
         formStatus.textContent = "❌ Something went wrong! Please try again.";
         formStatus.style.color = "red";
-        console.error(err);
+
+      }).finally(() => {
+        // Hide loader and restore button
+        btnText.textContent = "Send message";
+        btnLoader.classList.add("hidden");
+        sendBtn.disabled = false;
       });
   });
 </script>
+
 
 </body>
 </html>
