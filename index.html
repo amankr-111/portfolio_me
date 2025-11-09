@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aman Kumar — Full‑Stack Developer</title>
   <style>
+    ul.custom-list li {
+  position: relative;
+  padding-left: 1.25rem;
+}
+ul.custom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  background: rgb(99 102 241);
+  border-radius: 50%;
+}
+
 #cursorGlow{
   position: fixed;
   width: 250px;
@@ -134,16 +149,33 @@
           </dl>
         </div>
       </div>
-      <div class="lg:col-span-2 space-y-6">
-        <div class="p-6 rounded-2xl ring-1 ring-black/5 dark:ring-white/10 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl">
-          <h3 class="font-semibold">Highlights</h3>
-          <ul class="mt-3 list-disc pl-5 space-y-2 text-slate-600 dark:text-slate-300">
-            <li>Built a recruitment ops portal used to manage timesheets, generate invoices, and automate email workflows.</li>
-            <li>Created an investment tracking app (Perceptive) for visualizing portfolio growth and forecasting returns.</li>
-            <li>Comfortable with modern UI frameworks (Bootstrap) and no‑code dev toolchains (Wappler) when they speed up delivery.</li>
-          </ul>
-        </div>
-      </div>
+   <div class="lg:col-span-2 space-y-6">
+<div class="lg:col-span-2 space-y-6">
+  <div class="p-8 rounded-2xl ring-1 ring-black/5 dark:ring-white/10 bg-white/70 dark:bg-slate-900/60 backdrop-blur-xl shadow-sm">
+    <h3 class="font-semibold text-xl tracking-tight">Highlights</h3>
+
+    <ul class="mt-4 space-y-4 text-slate-700 dark:text-slate-300 text-base leading-relaxed">
+      <li>Designed and built a complete recruitment operations platform handling contracts, timesheets, invoices, payroll prep, and automated communication flows.</li>
+
+      <li>Developed an investment tracking and portfolio forecasting system that visualizes fund growth, commission trails, and long-term value projections.</li>
+
+      <li>Integrated external services including e-signature workflows (EchoSign), accounting APIs (Xero/Sage), and secured document generation pipelines.</li>
+
+      <li>Optimized backend data processing to handle large Excel/CSV imports with validation, background jobs, and error tracing.</li>
+
+      <li>Built interactive dashboards with clear business insights to support decision-making using Chart.js and custom visualization patterns.</li>
+
+      <li>Comfortable with UI frameworks like Bootstrap, Tailwind, and Wappler for rapid and scalable frontend development.</li>
+
+      <li>Strong focus on writing clean, maintainable code and building scalable architectures that grow with product requirements.</li>
+    </ul>
+
+  </div>
+</div>
+
+
+</div>
+
     </div>
   </section>
 
@@ -151,10 +183,13 @@
   <section id="skills" class="section py-20">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-bold tracking-tight">What I Do</h2>
-      <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
-        I specialize in building complete, production‑ready <strong>web applications</strong> from UI to backend.
-        I can also develop <strong>mobile applications</strong> and integrate complex third‑party systems.
-      </p>
+    <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed  ">
+  I specialize in building complete, production-ready <strong>web applications</strong> from clean, intuitive user interfaces to secure and scalable backend systems. 
+  Alongside this, I also develop <strong>mobile applications</strong> with modern frameworks and ensure smooth integrations with third-party platforms such as 
+  <strong>e-signing services</strong>, <strong>accounting systems</strong>, and <strong>payment gateways</strong>. My focus is always on performance, reliability, 
+  and delivering a solution that aligns perfectly with real business needs.
+</p>
+
 
       <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="p-6 rounded-2xl ring-1 ring-black/5 dark:ring-white/10 bg-white/60 dark:bg-slate-900/60">
