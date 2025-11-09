@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aman Kumar — Full‑Stack Developer</title>
+  <meta name="description" content="Aman Kumar — Full‑Stack Developer (HTML, CSS, JavaScript, Node.js, PostgreSQL). Portfolio, projects, experience, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{color-scheme: light dark}
+    html{scroll-behavior:smooth}
+    body{font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji','Segoe UI Emoji'}
+    .glass{backdrop-filter:saturate(160%) blur(12px); background: color-mix(in oklab, white 65%, transparent)}
+    .dark .glass{background: color-mix(in oklab, black 50%, transparent)}
+    .section{scroll-margin-top: 96px}
+  </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 text-slate-800 dark:text-slate-200">
+  <!-- NAV -->
+  <header class="fixed top-0 inset-x-0 z-50">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mt-4 mb-3 flex items-center justify-between rounded-2xl glass shadow/30 shadow-sm ring-1 ring-black/5 dark:ring-white/10 px-4 py-3">
+        <a href="#home" class="font-bold tracking-tight text-xl">Aman Kumar<span class="text-indigo-500">.</span></a>
+        <div class="hidden md:flex gap-1 text-sm">
+          <a class="px-3 py-2 rounded-xl hover:bg-slate-900/5 dark:hover:bg-white/5" href="#about">About</a>
+          <a class="px-3 py-2 rounded-xl hover:bg-slate-900/5 dark:hover:bg-white/5" href="#skills">Skills</a>
+          <a class="px-3 py-2 rounded-xl hover:bg-slate-900/5 dark:hover:bg-white/5" href="#projects">Projects</a>
+          <a class="px-3 py-2 rounded-xl hover:bg-slate-900/5 dark:hover:bg-white/5" href="#experience">Experience</a>
+          <a class="px-3 py-2 rounded-xl hover:bg-slate-900/5 dark:hover:bg-white/5" href="#contact">Contact</a>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="#contact" class="hidden sm:inline-flex items-center gap-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 text-sm font-medium shadow-sm">
+            <span>Hire me</span>
+          </a>
+          <button class="md:hidden p-2 rounded-xl hover:bg-slate-900/5 dark:hover:bg-white/5" id="menuBtn" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="md:hidden mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 hidden">
+      <div class="glass rounded-2xl ring-1 ring-black/5 dark:ring-white/10 px-4 py-3 flex flex-col gap-2">
+        <a class="px-3 py-2 rounded-xl hover:bg-slate-900/5 dark:hover:bg-white/5" href="#about">About</a>
+        <a class="px-3 py-2 rounded-xl hover:bg-slate-900/5 dark:hover:bg-white/5" href="#skills">Skills</a>
+        <a class="px-3 py-2 rounded-xl hover:bg-slate-900/5 dark:hover:bg-white/5" href="#projects">Projects</a>
+        <a class="px-3 py-2 rounded-xl hover:bg-slate-900/5 dark:hover:bg-white/5" href="#experience">Experience</a>
+        <a class="px-3 py-2 rounded-xl hover:bg-slate-900/5 dark:hover:bg-white/5" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="section pt-40 pb-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 text-xs font-medium bg-indigo-600/10 text-indigo-700 dark:text-indigo-300 px-3 py-1 rounded-full ring-1 ring-indigo-600/20">Open for remote & freelance · India (IST)
+        </div>
+        <h1 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight">
+          Building clean, fast web apps for real business results
+        </h1>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">
+          I'm <strong>Aman Kumar</strong>, a results‑driven Full Stack Engineer with 2+ years of experience building scalable, production‑grade applications using HTML, CSS, JavaScript, Node.js, Express.js, and PostgreSQL. I focus on clean architecture, optimized performance, and business‑centric problem solving.
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="#projects" class="inline-flex items-center gap-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-3 text-sm font-semibold shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            View projects
+          </a>
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-xl ring-1 ring-slate-300 dark:ring-slate-700 hover:ring-indigo-300 dark:hover:ring-indigo-600 px-5 py-3 text-sm font-semibold">
+            Contact me
+          </a>
+          <a href="#" class="inline-flex items-center gap-2 rounded-xl ring-1 ring-slate-300 dark:ring-slate-700 hover:ring-indigo-300 dark:hover:ring-indigo-600 px-5 py-3 text-sm font-semibold" download>
+            Download résumé
+          </a>
+        </div>
+        <div class="mt-8 flex items-center gap-4 text-sm">
+          <a href="mailto:amankr0741@gmail.com" class="hover:underline">amankr0741@gmail.com</a>
+          <span aria-hidden>•</span>
+          <a href="https://github.com/amankr-111" target="_blank" class="hover:underline">GitHub</a>
+          <span aria-hidden>•</span>
+          <a href="https://www.linkedin.com/in/-aman-kumar" target="_blank" class="hover:underline">LinkedIn</a>
+        </div>
+      </div>
+      <div class="relative">
+        <img class="w-full h-[420px] object-cover rounded-3xl shadow-lg ring-1 ring-black/5 dark:ring-white/10" src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1600&auto=format&fit=crop" alt="Developer desk with code on screens" />
+        <div class="absolute -bottom-6 -left-6 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-2xl p-4 ring-1 ring-black/5 dark:ring-white/10 shadow-sm">
+          <p class="text-xs text-slate-500">Recent tech:</p>
+          <div class="mt-2 flex flex-wrap gap-2">
+            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800">Node.js</span>
+            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800">PostgreSQL</span>
+            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800">Bootstrap</span>
+            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800">Wappler</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-10 items-start">
+      <div class="lg:col-span-1">
+        <h2 class="text-2xl font-bold tracking-tight">About me</h2>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">I enjoy translating business problems into simple, robust software. I care about clarity, good UX, and performance.
+        </p>
+        <div class="mt-6 p-6 rounded-2xl ring-1 ring-black/5 dark:ring-white/10 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl">
+          <dl class="grid grid-cols-2 gap-y-3 gap-x-4 text-sm">
+            <dt class="text-slate-500">Location</dt><dd>India (UTC+5:30)</dd>
+            <dt class="text-slate-500">Degree</dt><dd>MCA, 2024</dd>
+            <dt class="text-slate-500">Experience</dt><dd>2+ years</dd>
+            <dt class="text-slate-500">Freelance</dt><dd>Available</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="lg:col-span-2 space-y-6">
+        <div class="p-6 rounded-2xl ring-1 ring-black/5 dark:ring-white/10 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl">
+          <h3 class="font-semibold">Highlights</h3>
+          <ul class="mt-3 list-disc pl-5 space-y-2 text-slate-600 dark:text-slate-300">
+            <li>Built a recruitment ops portal used to manage timesheets, generate invoices, and automate email workflows.</li>
+            <li>Created an investment tracking app (Perceptive) for visualizing portfolio growth and forecasting returns.</li>
+            <li>Comfortable with modern UI frameworks (Bootstrap) and no‑code dev toolchains (Wappler) when they speed up delivery.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight">What I Do</h2>
+      <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
+        I specialize in building complete, production‑ready <strong>web applications</strong> from UI to backend.
+        I can also develop <strong>mobile applications</strong> and integrate complex third‑party systems.
+      </p>
+
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl ring-1 ring-black/5 dark:ring-white/10 bg-white/60 dark:bg-slate-900/60">
+          <h3 class="font-semibold text-lg">Web Application Development</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Designing and building scalable, high‑performance web platforms with secure server‑side logic and clean user experiences.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl ring-1 ring-black/5 dark:ring-white/10 bg-white/60 dark:bg-slate-900/60">
+          <h3 class="font-semibold text-lg">Mobile App Development</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Building mobile applications with modern frameworks and APIs for seamless user interaction and performance.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl ring-1 ring-black/5 dark:ring-white/10 bg-white/60 dark:bg-slate-900/60">
+          <h3 class="font-semibold text-lg">API & System Integrations</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Experienced with integrating financial and recruitment systems including <strong>Xero</strong> and <strong>Sage</strong> for automated workflows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-bold tracking-tight">Selected projects</h2>
+          <p class="mt-2 text-slate-600 dark:text-slate-300">A few things I’ve designed and built recently.</p>
+        </div>
+      </div>
+
+      <div class="mt-8 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <!-- Project 1 -->
+        <article class="group rounded-3xl overflow-hidden ring-1 ring-black/5 dark:ring-white/10 bg-white/70 dark:bg-slate-900/70">
+          <div class="relative">
+            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop" alt="Recruitment portal dashboard" />
+            <span class="absolute top-3 left-3 text-xs bg-white/90 dark:bg-slate-900/80 backdrop-blur px-2 py-1 rounded-lg ring-1 ring-black/5 dark:ring-white/10">Web App</span>
+          </div>
+          <div class="p-5 space-y-3">
+            <h3 class="font-semibold text-lg">Recruitment & Operations Management Platform (CRM)</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">A complete recruitment and contractor operations system designed to manage the full staffing lifecycle — from onboarding and contract setup to timesheets, invoicing, payroll preparation, and performance reporting. Includes flexible approval workflows, automated notifications, compliance tracking, and secure role-based access. Integrated third‑party services to synchronize workforce and financial data across operational tools.</p>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">PostgreSQL</span><span class="tag">Bullhorn API</span><span class="tag">Sage API</span>
+            </div>
+            <!-- <div class="pt-2 flex items-center gap-2">
+              <a class="btn-secondary" href="#" target="_blank">Live demo</a>
+              <a class="btn-tertiary" href="#" target="_blank">Case study</a>
+            </div> -->
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="group rounded-3xl overflow-hidden ring-1 ring-black/5 dark:ring-white/10 bg-white/70 dark:bg-slate-900/70">
+          <div class="relative">
+            <img class="h-48 w-full object-cover" src="https://images.shiksha.com/mediadata/images/articles/1731059087phpAbWFz8.jpeg" alt="Investment analytics" />
+            <span class="absolute top-3 left-3 text-xs bg-white/90 dark:bg-slate-900/80 backdrop-blur px-2 py-1 rounded-lg ring-1 ring-black/5 dark:ring-white/10">Dashboard</span>
+          </div>
+          <div class="p-5 space-y-3">
+            <h3 class="font-semibold text-lg">Financial Portfolio & Investment Tracking Platform</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">A data-driven finance dashboard that helps users monitor investment performance, analyze fund value changes, view trail commissions, and generate growth forecasts. Supports Excel data import for bulk historic portfolio onboarding. Built interactive visualizations for clarity, allowing users and advisors to track portfolio health and long‑term gains efficiently.</p>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Chart.js</span>
+            </div>
+            <!-- <div class="pt-2 flex items-center gap-2">
+              <a class="btn-secondary" href="#" target="_blank">Live demo</a>
+              <a class="btn-tertiary" href="#" target="_blank">Case study</a>
+            </div> -->
+          </div>
+        </article>
+
+        <!-- Project 3 (placeholder) -->
+        <article class="group rounded-3xl overflow-hidden ring-1 ring-black/5 dark:ring-white/10 bg-white/70 dark:bg-slate-900/70">
+          <div class="relative">
+            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop" alt="E‑signature workflow" />
+            <span class="absolute top-3 left-3 text-xs bg-white/90 dark:bg-slate-900/80 backdrop-blur px-2 py-1 rounded-lg ring-1 ring-black/5 dark:ring-white/10">Integration</span>
+          </div>
+          <div class="p-5 space-y-3">
+            <h3 class="font-semibold text-lg">E‑Signature Flow</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">Integrated EchoSign e‑signatures with templated PDFs and webhook status tracking to streamline approvals.</p>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="tag">EchoSign</span><span class="tag">Webhooks</span><span class="tag">Node.js</span>
+            </div>
+            <!-- <div class="pt-2 flex items-center gap-2">
+              <a class="btn-tertiary" href="#" target="_blank">Read more</a>
+            </div> -->
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <!-- <section id="experience" class="section py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-10">
+      <div class="lg:col-span-1">
+        <h2 class="text-2xl font-bold tracking-tight">Experience & Education</h2>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">A quick look at my background.</p>
+      </div>
+      <div class="lg:col-span-2 space-y-6">
+        <div class="rounded-2xl ring-1 ring-black/5 dark:ring-white/10 bg-white/60 dark:bg-slate-900/60 p-6">
+          <h3 class="font-semibold">Full Stack Engineer</h3>
+          <p class="text-sm text-slate-500">Sep 2024 – Present</p>
+          <ul class="mt-3 text-sm list-disc pl-5 space-y-2 text-slate-600 dark:text-slate-300">
+            <li>Developing and deploying scalable cloud‑first web applications.</li>
+            <li>Working in agile delivery cycles to optimize performance and maintain code quality.</li>
+            <li>Implementing system enhancements, API integrations, and backend optimizations.</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl ring-1 ring-black/5 dark:ring-white/10 bg-white/60 dark:bg-slate-900/60 p-6">
+          <h3 class="font-semibold">Full Stack Developer</h3>
+          <p class="text-sm text-slate-500">Oct 2023 – Sep 2024</p>
+          <ul class="mt-3 text-sm list-disc pl-5 space-y-2 text-slate-600 dark:text-slate-300">
+            <li>Designed and built end‑to‑end system features across frontend UI and backend services.</li>
+            <li>Integrated APIs, improved performance, and ensured reliable CI/CD deployments.</li>
+            <li>Acted as SME on core development tasks, owning solutions independently.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- STATS / CTA -->
+  <section class="py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-3 gap-6">
+        <div class="stat">
+          <span class="stat-number">100+</span>
+          <span class="stat-label">features shipped</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">2+yrs</span>
+          <span class="stat-label">full‑stack experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">production apps</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl overflow-hidden ring-1 ring-black/5 dark:ring-white/10 bg-white/70 dark:bg-slate-900/70 grid lg:grid-cols-2">
+        <div class="p-8 sm:p-12">
+          <h2 class="text-2xl font-bold tracking-tight">Let’s build something great</h2>
+          <p class="mt-2 text-slate-600 dark:text-slate-300">Tell me about your idea — I’ll reply with a quick plan, a timeline, and a fair quote.</p>
+          <ul class="mt-6 text-sm space-y-2 text-slate-600 dark:text-slate-300">
+            <li>• Web app development (admin panels, dashboards)</li>
+            <li>• Data pipelines, reporting, and forecasting</li>
+            <li>• Third‑party integrations (auth, accounting, e‑signature)</li>
+          </ul>
+          <div class="mt-8 space-y-3 text-sm">
+            <div class="flex items-center gap-3"><svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg><a class="hover:underline" href="mailto:amankr0741@gmail.com">amankr0741@gmail.com</a></div>
+            <div class="flex items-center gap-3"><svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M22 12A10 10 0 1 1 12 2"/><path d="M12 6v6l4 2"/></svg>India (UTC+5:30)</div>
+          </div>
+        </div>
+       <form id="contactForm" class="p-8 sm:p-12 bg-slate-50/70 dark:bg-slate-950/40">
+  <div class="grid grid-cols-1 gap-4">
+    
+    <div>
+      <label class="text-sm">Name</label>
+      <input type="text" name="name" placeholder="Your name" class="mt-1 input" required>
+    </div>
+
+    <div>
+      <label class="text-sm">Email</label>
+      <input type="email" name="email" placeholder="you@example.com" class="mt-1 input" required>
+    </div>
+
+    <div>
+      <label class="text-sm">Budget (optional)</label>
+      <select name="budget" class="mt-1 input">
+        <option>Not decided</option>
+        <option>Under $1,000</option>
+        <option>$1,000–$5,000</option>
+        <option>$5,000+</option>
+      </select>
+    </div>
+
+    <div>
+      <label class="text-sm">Project details</label>
+      <textarea name="message" placeholder="What are we building?" rows="5" class="mt-1 input" required></textarea>
+    </div>
+
+    <button type="submit" class="rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-3 text-sm font-semibold shadow-sm">
+      Send message
+    </button>
+
+    <p id="formStatus" class="text-xs text-slate-500 mt-2"></p>
+  </div>
+</form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+      <p>© <span id="year"></span> Aman Kumar. All rights reserved.</p>
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/amankr-111" target="_blank" class="hover:underline">GitHub</a>
+        <span aria-hidden>•</span>
+        <a href="https://www.linkedin.com/in/-aman-kumar" target="_blank" class="hover:underline">LinkedIn</a>
+        <span aria-hidden>•</span>
+        <a href="#" class="hover:underline">Download résumé</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SMALL UTIL CSS COMPONENTS -->
+  <style>
+    .badge{padding:.35rem .6rem;border-radius:.65rem;background:rgb(241 245 249);color:rgb(51 65 85)}
+    .dark .badge{background:rgb(30 41 59);color:rgb(203 213 225)}
+    .tag{padding:.25rem .55rem;border-radius:.55rem;background:rgb(99 102 241 / .12);color:rgb(67 56 202)}
+    .dark .tag{background:rgb(99 102 241 / .18);color:rgb(165 180 252)}
+    .btn-secondary{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem .9rem;border-radius:.75rem;background:rgb(15 23 42);color:white}
+    .dark .btn-secondary{background:rgb(99 102 241)}
+    .btn-secondary:hover{opacity:.95}
+    .btn-tertiary{display:inline-flex;align-items:center;gap:.5rem;padding:.55rem .85rem;border-radius:.75rem;border:1px solid rgb(226 232 240)}
+    .dark .btn-tertiary{border-color:rgb(51 65 85)}
+    .input{width:100%;padding:.75rem 1rem;border-radius:.75rem;border:1px solid rgb(226 232 240);background:white}
+    .dark .input{background:rgb(2 6 23);border-color:rgb(51 65 85)}
+    .stat{display:flex;flex-direction:column;gap:.25rem;align-items:center;justify-content:center;border-radius:1.25rem;background:rgba(255,255,255,.65);padding:1.25rem;box-shadow:0 1px 0 rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.06)}
+    .dark .stat{background:rgba(2,6,23,.65);border-color:rgba(255,255,255,.08)}
+    .stat-number{font-weight:800;font-size:1.75rem}
+    .stat-label{font-size:.8rem;color:rgb(100 116 139)}
+  </style>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme toggle with localStorage
+    const root = document.documentElement;
+    const toggle = document.getElementById('themeToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuBtn = document.getElementById('menuBtn');
+
+    const stored = localStorage.getItem('theme');
+    if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      root.classList.add('dark');
+    }
+
+    toggle.addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // Mobile menu
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("SHl36sK5Uoz3pwnwQ"); 
+  })();
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formStatus = document.getElementById('formStatus');
+
+    emailjs.sendForm("service_hp5egxb", "template_sh8173p", this)
+      .then(() => {
+        formStatus.textContent = "✅ Message sent successfully! I will get back to you soon.";
+        formStatus.style.color = "green";
+        this.reset();
+      }, (err) => {
+        formStatus.textContent = "❌ Something went wrong! Please try again.";
+        formStatus.style.color = "red";
+        console.error(err);
+      });
+  });
+</script>
+
+</body>
+</html>
+
+<!-- EmailJS -->
+
+
+
